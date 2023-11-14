@@ -1,0 +1,8 @@
+E:\KUET_Teaching\CSE 4208 Computer Graphics Laboratory 2K18\Lab 3\Lighting\x64\Debug\Lighting.exe
+E:\KUET_Teaching\CSE 4208 Computer Graphics Laboratory 2K18\Lab 3\Lighting Student Version\x64\Debug\Lighting.exe
+E:\KUET_Teaching\CSE 4208 Computer Graphics Laboratory 2K18\Lab 4\Texture Mapping Student Version\x64\Debug\Lighting.exe
+F:\CSE 4208\Lab 4\Texture Mapping Student Version\x64\Debug\Lighting.exe
+C:\Users\Taslima Joty\Documents\LAB_04\Texture Mapping Student Version\x64\Debug\Lighting.exe
+F:\test\Texture\x64\Debug\Lighting.exe
+C:\Users\USER\Documents\Texture\x64\Debug\Lighting.exe
+C:\Users\Mahadi Ankon\Desktop\Texture\x64\Debug\Lighting.exe
