@@ -6,3 +6,4 @@ C:\Users\Taslima Joty\Documents\LAB_04\Texture Mapping Student Version\x64\Debug
 F:\test\Texture\x64\Debug\Lighting.exe
 C:\Users\USER\Documents\Texture\x64\Debug\Lighting.exe
 C:\Users\Mahadi Ankon\Desktop\Texture\x64\Debug\Lighting.exe
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\x64\Debug\Lighting.exe

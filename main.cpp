@@ -58,6 +58,7 @@ bool doortonext = false;
 float slide=0;
 unsigned int wood_tex;
 unsigned int sofa_tex1;
+unsigned int bed_sofa;
 unsigned int sofa_tex2;
 unsigned int sofa_tex3;
 unsigned int tv_tex;
@@ -79,6 +80,8 @@ unsigned int bedframe;
 unsigned int pillow;
 unsigned int table_tex;
 unsigned int brick_wood;
+int anim = 0;
+const int MAX_ANIM_VALUE = 74;
 bool box=false;
 bool box2 = false;
 bool box3 = false;
@@ -88,6 +91,11 @@ float shamne2 = 0.0;
 float shamne3 = 0.0;
 float shamne4 = 0.0;
 float aquarium;
+
+
+
+
+
 //Camera
 Camera camera(glm::vec3(0.0f, 0.0f, 1.5f));
 float lastX = SCR_WIDTH / 2.0f;
@@ -220,6 +228,44 @@ void Sofa(Cube& cube, Shader& lightingShader, Shader& lightingShader2,  glm::mat
 
 
 }
+
+void bedSofa(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
+{
+    cube.setTextureProperty(bed_sofa, bed_sofa, 32.0f);
+    glm::mat4 a = transform(-0.8, -0.5, -5.5, 0, 0, 0, 4, 0.2, 1.5);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+    a = transform(-0.8, -0.5 + 0.1, -5.5, 0, 0, 0, 2, 0.25, 1.5);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform(.2, -0.5 + 0.1, -5.5, 0, 0, 0, 2, 0.25, 1.5);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+
+    a = transform(-0.8, -0.28, -5.5, 0, 0, 0, 4, 1.2, 0.2);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform(-0.8, -0.28, -5.4, 0, 0, 0, 0.2, 0.6, 1.3);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform(-0.8 + 1.9, -0.28, -5.4, 0, 0, 0, 0.2, 0.6, 1.3);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+    a = transform(-0.8, -0.5, -5.5, 0, 0, 0, 0.1, -0.3, 1.5);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+    a = transform(-0.8 + 1.95, -.5, -5.5, 0, 0, 0, 0.1, -0.3, 1.5);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+}
+
+
+
 void table(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
 {
     cube.setTextureProperty(sofa_tex2, sofa_tex2, 32.0f);
@@ -286,6 +332,39 @@ void showcase(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::
 
 
     a = transform(-2.40, -.78, -1.44, 0, 00, 0, 0.9, 3.5, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform(-2.44, -.78, -1.9, 0, 00, 0, 0.9, 3.5, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform(-2.44, -.7, -1.85, 90, 00, 0, 0.9, 1.7, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform(-2.44, -.2, -1.85, 90, 00, 0, 0.9, 1.7, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform(-2.44, 0.4, -1.85, 90, 00, 0, 0.9, 1.7, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform(-2.44, 0.97, -1.85, 90, 00, 0, 0.9, 1.7, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+}
+
+
+void showcase2(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
+{
+    cube.setTextureProperty(shelf_tex, shelf_tex, 32.0f);
+    glm::mat4 a = transform(-2.44, -.78, -1, 0, 90, 0, 1.7, 3.5, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform(-2.44, -.78, -1, 0, 00, 0, 0.9, 3.5, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+    a = transform(-2.40, -.78, -1.44, 0, 00, 0, 0.9, 3.5, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform(-2.40, -.78, -1.67, 0, 00, 0, 0.9, 3.5, 0.05);
     cube.drawCubeWithTexture(lightingShader, model * a);
 
     a = transform(-2.44, -.78, -1.9, 0, 00, 0, 0.9, 3.5, 0.1);
@@ -868,17 +947,7 @@ int main()
     pillow = loadTexture("cushion.jpg", GL_REPEAT, GL_REPEAT, 6, 2);
     table_tex = loadTexture("table wood.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     brick_wood = loadTexture("brick_wood.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
-    
-    string s;
-    for (int i = 0; i < 75; i++)
-    {
-        s = "aquarium/giphy-"+to_string(i)+".png";
-        aquarium = loadTexture(s.c_str(), GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
-        if (i == 74)
-            i = 0;
-    }
-
-
+    bed_sofa = loadTexture("bedsofa.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
 
 
     Cube cube = Cube(diffMap, specMap, 32.0f, 0.0f, 0.0f, 1.0f, 1.0f);
@@ -946,15 +1015,6 @@ int main()
 
         
 
-
-
-
-
-        translateMatrix = glm::translate(identityMatrix, glm::vec3(-0.76, 0.059, -9.0));
-        scaleMatrix = glm::scale(identityMatrix, glm::vec3(1.5f, 1.0f, 1.0f));//translate_X, translate_Y, translate_Z
-        //middle sofa
-        model = transform(-3.3, -0.1, -0.5, 0, -90, 0, 0.8, 1, 1);
-       // Sofa(cube, lightingShaderWithTexture,lightingShader, model);//,translate_X, translate_Y, translate_Z
  
 
 
@@ -993,6 +1053,9 @@ int main()
         model = transform(-2.0, -0.1, 0.6, 0, 310, 0, 0.5, 1, 0.8);
         Sofa(cube, lightingShaderWithTexture, lightingShader, model);
 
+        model = transform(-4, -0.1, 0, 0, 0, 0, 0.8, 1, 1);
+        bedSofa(cube, lightingShaderWithTexture, lightingShader, model);
+
 
         //Mat
         glm::mat4 a = transform(.7, -.8, -1.2, 0, -90, 0, 3, 0.2, 2);
@@ -1002,14 +1065,20 @@ int main()
         //table
         model = transform(5.0, -0.2, -0.5, 0, 90, 0, 1.5, 1, 1.3);
         table(cube, lightingShaderWithTexture, lightingShader, model);
+        
+        //anim = (anim == MAX_ANIM_VALUE) ? 0 : ++anim;
+        string s = "aquarium/giphy-" + to_string(anim) + ".png";
+        aquarium = loadTexture(s.c_str(), GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
+
+
+
+        // Skip updates until enough time has elapsed for the target frame rate
 
         //tv
         //cout << s << endl;
-        cube.setTextureProperty(aquarium, aquarium, 32.0f);
         a = transform(-2.45, -.4, 1.0, 0, 90, 0, 4.5, 2.2, 0.1);
-        cube.drawCubeWithTexture(lightingShaderWithTexture, a);
-        //cube.setMaterialisticProperty(glm::vec3(0, 0, 0));
-        //cube.drawCubeWithMaterialisticProperty(lightingShader, a);
+        cube.setMaterialisticProperty(glm::vec3(0, 0, 0));
+        cube.drawCubeWithMaterialisticProperty(lightingShader, a);
 
         //painting
         cube.setTextureProperty(painting_tex3, painting_tex3, 32.0);
@@ -1195,7 +1264,10 @@ int main()
        // dressingtable(cube, lightingShaderWithTexture, lightingShader, model);
 
 
+        //showcase 2
 
+        model = transform(1.4, -2.4, -0.6, 0, 90, 0, 1, 1.1, 4.5);
+        showcase2(cube, lightingShaderWithTexture, lightingShader, model);
 
 
 
