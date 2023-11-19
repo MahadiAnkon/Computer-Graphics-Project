@@ -79,6 +79,8 @@ unsigned int bedsheet;
 unsigned int bedframe;
 unsigned int pillow;
 unsigned int table_tex;
+unsigned int mirror_tex;
+unsigned int rug_tex;
 unsigned int brick_wood;
 int anim = 0;
 const int MAX_ANIM_VALUE = 74;
@@ -928,7 +930,7 @@ void table2 (Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::m
     cube.drawCubeWithTexture(lightingShader, model * a);
 
 
-    cube.setTextureProperty(wood_tex, wood_tex, 32.0f);
+    cube.setTextureProperty(mirror_tex, mirror_tex, 32.0f);
     a = transform2(0.8, -0.75 + .65 + 0.3, -2.42, 0, 0, 0, 4.6, 2.3, 0.01);
     cube.drawCubeWithTexture(lightingShader, model * a);
     
@@ -1041,8 +1043,8 @@ int main()
     table_tex = loadTexture("table wood.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     brick_wood = loadTexture("brick_wood.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     bed_sofa = loadTexture("bedsofa.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
-
-
+    mirror_tex = loadTexture("mirror.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
+    rug_tex = loadTexture("rug.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     Cube cube = Cube(diffMap, specMap, 32.0f, 0.0f, 0.0f, 1.0f, 1.0f);
     Cube tiles_cube = Cube(floor_tex, floor_tex, 32.0, 0.0f, 0.0f, 20.0f, 20.0f);
     //Sphere sphere = Sphere();
@@ -1121,7 +1123,10 @@ int main()
 
 
 
-
+        //rug
+        tiles_cube.setTextureProperty(rug_tex, rug_tex, 32.0);
+        model = transform2(-6, -0.75, -3, 0, 0, 0, 4, 0.03, 4);
+        tiles_cube.drawCubeWithTexture(lightingShaderWithTexture, model);
 
 
         //room1_wall
