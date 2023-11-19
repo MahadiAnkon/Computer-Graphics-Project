@@ -91,10 +91,11 @@ float shamne2 = 0.0;
 float shamne3 = 0.0;
 float shamne4 = 0.0;
 float aquarium;
-
-
-
-
+bool swing_toogle = false;
+float swing_angle = 0.0;
+bool is_increasing = true;
+float swing_translate = 0.0;
+float swing_translatez = 0.0;
 
 //Camera
 Camera camera(glm::vec3(0.0f, 0.0f, 1.5f));
@@ -382,6 +383,8 @@ void showcase2(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm:
     a = transform(-2.44, 0.97, -1.85, 90, 00, 0, 0.9, 1.7, 0.1);
     cube.drawCubeWithTexture(lightingShader, model * a);
 }
+
+
 
 
 void dooropenclose(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
@@ -728,6 +731,72 @@ glm::mat4 transform2(float tx, float ty, float tz, float rx, float ry, float rz,
     return a;
 }
 
+void swing(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
+{
+    cube.setTextureProperty(shelf_tex, shelf_tex, 32.0f);
+    glm::mat4 a = transform2(-1, -0.4, -2.0, 0.0, 0.0, 0.0, 2.4, 0.03, 0.2);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(-1, -0.4, -2.15, 0.0, 0.0, 0.0, 2.4, 0.03, 0.2);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(-1, -0.4, -2.30, 0.0, 0.0, 0.0, 2.4, 0.03, 0.2);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(-1, -0.4, -2.45, 0.0, 0.0, 0.0, 2.4, 0.03, 0.2);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(-1, -0.4, -2.60, 0.0, 0.0, 0.0, 2.4, 0.03, 0.2);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(-0.9, -0.415, -2.60, 0.0, 0.0, 0.0, 0.1, 0.03, 1.4);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(0.1, -0.415, -2.60, 0.0, 0.0, 0.0, 0.1, 0.03, 1.4);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(-0.4, -0.415, -2.60, 0.0, 0.0, 0.0, 0.1, 0.03, 1.4);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+    a = transform2(-0.9, -0.4, -2.5, 18.0, 0.0, 0.0, 0.02, 1.65, 0.02);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(-0.9, -0.4, -2.01, -18.0, 0.0, 0.0, 0.02, 1.65, 0.02);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(0.1, -0.4, -2.5, 18.0, 0.0, 0.0, 0.02, 1.65, 0.02);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(0.1, -0.4, -2.01, -18.0, 0.0, 0.0, 0.02, 1.65, 0.02);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+
+}
+
+void swingframe(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
+{
+    cube.setTextureProperty(shelf_tex, shelf_tex, 32.0f);
+    glm::mat4 a = transform2(-1.15, -0.75, -2.6, 20.0, 0.0, 0.0, 0.1, 2.5, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(-1.15, -0.75, -1.9, -20.0, 0.0, 0.0, 0.1, 2.5, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+    a = transform2(0.3, -0.75, -2.6, 20.0, 0.0, 0.0, 0.1, 2.5, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(0.3, -0.75, -1.9, -20.0, 0.0, 0.0, 0.1, 2.5, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(-1.2, 0.32, -2.25, -20.0, 0.0, 0.0, 3.2, 0.1, 0.1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+}
+
 
 void waredrove(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model,unsigned int b)
 {
@@ -1053,7 +1122,7 @@ int main()
         model = transform(-2.0, -0.1, 0.6, 0, 310, 0, 0.5, 1, 0.8);
         Sofa(cube, lightingShaderWithTexture, lightingShader, model);
 
-        model = transform(-4, -0.1, 0, 0, 0, 0, 0.8, 1, 1);
+        model = transform(-8.5, -0.1, -2, 0, -90, 0, 0.8, 1, 1);
         bedSofa(cube, lightingShaderWithTexture, lightingShader, model);
 
 
@@ -1102,7 +1171,7 @@ int main()
 
 
         //waredrove
-        model = transform(-5.1, 0, -2, 0, -90, 0, 1, 1, 1);
+        model = transform(-5.1, 0, -2, 0, 90, 0, 1, 1, 1);
         waredrove(cube, lightingShaderWithTexture, lightingShader, model,brick_wood);
         if(box)
         {
@@ -1268,10 +1337,40 @@ int main()
 
         model = transform(1.4, -2.4, -0.6, 0, 90, 0, 1, 1.1, 4.5);
         showcase2(cube, lightingShaderWithTexture, lightingShader, model);
+        if(swing_toogle)
+        {
+        swing_angle = min(swing_angle, 10.0f);
+
+        if (is_increasing) {
+            swing_angle += 1.0f/10;
+            swing_translate -= 0.036/10;
+            swing_translatez -= 0.005 / 10;
+            if (swing_angle >= 10.0f) {
+                is_increasing = false;
+            }
+        }
+        else {
+            swing_angle -= 1.0f / 10;
+            swing_translate += 0.036 / 10;
+            swing_translatez += 0.005 / 10;
+            if (swing_angle <= -10.0f) {
+                is_increasing = true;
+            }
+        }
+        }
+
+        //swing
+
+        model = transform2(-3.5, -0.1+swing_translate, -2.52 - 0.5 +swing_translatez, swing_angle, 0, 0, 0.9, 0.9, 0.9);
+        swing(cube, lightingShaderWithTexture, lightingShader, model);
+
+        
 
 
 
-
+        //swing frame
+        model = transform2(-3.5, -0.1, -2.5-0.5, 0, 0, 0, 0.9, 0.9, 0.9);
+        swingframe(cube, lightingShaderWithTexture, lightingShader, model);
 
 
         lightingShader.use();
@@ -1537,6 +1636,19 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
         }
         else {
             dooropen = false;
+        }
+    }
+
+    if (glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS)
+    {
+        swing_angle = 0;
+        swing_translate = 0;
+        swing_translatez =0;
+        if (!swing_toogle) {
+            swing_toogle = true;
+        }
+        else {
+            swing_toogle = false;
         }
     }
 
