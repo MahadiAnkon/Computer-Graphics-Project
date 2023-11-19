@@ -1029,7 +1029,7 @@ int main()
     wood_tex = loadTexture(wood.c_str(), GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     blacktex = loadTexture("black.jpg", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     shelf_tex = loadTexture("shelf.jpg", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
-    shelf_tex2 = loadTexture("shelf2.jpg", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
+    shelf_tex2 = loadTexture("shelf2.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     showcase_tex = loadTexture("showcasered.jpg", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     showcase_door = loadTexture("showcasedoor.jpg", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     floor_tex = loadTexture("floor.jpg", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
@@ -1125,7 +1125,7 @@ int main()
 
         //rug
         tiles_cube.setTextureProperty(rug_tex, rug_tex, 32.0);
-        model = transform2(-6, -0.75, -3, 0, 0, 0, 4, 0.03, 4);
+        model = transform2(-6.3, -0.75, -3, 0, 0, 0, 4.5, 0.06, 4.5);
         tiles_cube.drawCubeWithTexture(lightingShaderWithTexture, model);
 
 
@@ -1163,14 +1163,14 @@ int main()
         //table
         model = transform(5.0, -0.2, -0.5, 0, 90, 0, 1.5, 1, 1.3);
         table(cube, lightingShaderWithTexture, lightingShader, model);
-        
-        //anim = (anim == MAX_ANIM_VALUE) ? 0 : ++anim;
-        string s = "aquarium/giphy-" + to_string(anim) + ".png";
-        aquarium = loadTexture(s.c_str(), GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
+       // 
+       // //anim = (anim == MAX_ANIM_VALUE) ? 0 : ++anim;
+       // string s = "aquarium/giphy-" + to_string(anim) + ".png";
+       // aquarium = loadTexture(s.c_str(), GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
 
 
 
-        // Skip updates until enough time has elapsed for the target frame rate
+       // // Skip updates until enough time has elapsed for the target frame rate
 
         //tv
         //cout << s << endl;
@@ -1280,7 +1280,7 @@ int main()
             }
         }
 
-            //box
+       //     //box
 
 
         //bed_side_table
@@ -1353,7 +1353,7 @@ int main()
         ladder(cube, lightingShaderWithTexture, lightingShader, model);
 
 
-        //table
+       // //table
 
         model = transform2(-4.3 , -0.2, -1, 0, 90, 0, 0.4, 0.7, 1.2);
         table2(cube, lightingShaderWithTexture, lightingShader, model);
@@ -1362,7 +1362,7 @@ int main()
        // dressingtable(cube, lightingShaderWithTexture, lightingShader, model);
 
 
-        //showcase 2
+       // //showcase 2
 
         model = transform(1.4, -2.4, -0.6, 0, 90, 0, 1, 1.1, 4.5);
         showcase2(cube, lightingShaderWithTexture, lightingShader, model);
@@ -1388,16 +1388,16 @@ int main()
         }
         }
 
-        //swing
+       // //swing
 
         model = transform2(-3.5, -0.1+swing_translate, -2.52 - 0.5 +swing_translatez, swing_angle, 0, 0, 0.9, 0.9, 0.9);
         swing(cube, lightingShaderWithTexture, lightingShader, model);
 
-        
+       // 
 
 
 
-        //swing frame
+       // //swing frame
         model = transform2(-3.5, -0.1, -2.5-0.5, 0, 0, 0, 0.9, 0.9, 0.9);
         swingframe(cube, lightingShaderWithTexture, lightingShader, model);
 
