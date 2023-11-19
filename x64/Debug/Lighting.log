@@ -567,183 +567,209 @@ C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(908,21): warnin
 C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(911,63): warning C4305: 'argument': truncation from 'double' to 'float'
 C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(911,32): warning C4305: 'argument': truncation from 'double' to 'float'
 C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(911,21): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(914,60): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(914,31): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(914,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(914,37): warning C4305: 'argument': truncation from 'double' to 'float'
 C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(914,20): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(917,61): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(917,56): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(917,30): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(917,73): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(917,65): warning C4305: 'argument': truncation from 'double' to 'float'
 C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(917,20): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(920,59): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(920,54): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(920,32): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(920,24): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(923,60): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(923,31): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(923,20): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(926,77): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(926,69): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(926,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(926,33): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(929,85): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(929,77): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(929,56): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(929,40): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(932,84): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(932,76): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(932,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(932,40): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(935,85): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(935,77): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(935,56): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(935,40): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1095,61): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1095,53): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1095,37): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1095,28): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1116,56): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1116,34): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1116,28): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1119,65): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1119,40): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1119,34): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(921,69): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(921,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(921,41): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(921,24): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(924,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(924,37): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(924,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(927,69): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(927,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(927,37): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(927,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(932,70): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(932,65): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(932,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(932,45): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(932,37): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(932,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(937,69): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(937,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(937,59): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(937,37): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(937,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(940,74): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(940,69): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(940,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(940,41): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(940,23): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(943,72): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(943,67): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(943,42): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(943,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(947,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(947,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(947,20): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(950,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(950,69): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(950,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(950,33): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(953,85): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(953,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(953,56): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(953,40): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(956,84): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(956,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(956,55): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(956,40): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(959,85): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(959,77): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(959,56): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(959,40): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1119,61): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1119,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1119,37): warning C4305: 'argument': truncation from 'double' to 'float'
 C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1119,28): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1122,63): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1122,39): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1122,34): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1125,54): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1125,34): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1130,62): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1130,43): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1130,38): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1130,33): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1135,62): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1135,33): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1140,31): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1148,60): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1148,55): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1148,31): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1148,24): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1154,60): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1154,55): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1154,50): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1154,35): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1154,30): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1154,24): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1159,58): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1159,53): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1159,48): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1140,56): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1140,34): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1140,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1143,65): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1143,40): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1143,34): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1143,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1146,63): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1146,39): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1146,34): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1149,54): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1149,34): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1154,62): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1154,43): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1154,38): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1154,33): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1159,62): warning C4305: 'argument': truncation from 'double' to 'float'
 C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1159,33): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1159,23): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1164,59): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1164,54): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1164,49): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1164,34): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1164,24): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1174,28): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1180,35): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1182,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1164,31): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1172,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1172,55): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1172,31): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1172,24): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1178,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1178,55): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1178,50): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1178,35): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1178,30): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1178,24): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1183,58): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1183,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1183,48): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1183,33): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1183,23): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1188,59): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1188,54): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1188,49): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1188,34): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1188,24): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1198,37): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1204,35): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1206,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
           with
           [
               _Ty=double
           ]
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1189,35): warning C4305: '-=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1191,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1213,35): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1215,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
           with
           [
               _Ty=double
           ]
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1201,35): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1203,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1225,35): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1227,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
           with
           [
               _Ty=double
           ]
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1210,35): warning C4305: '-=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1212,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1234,35): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1236,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
           with
           [
               _Ty=double
           ]
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1220,35): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1222,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1244,35): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1246,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
           with
           [
               _Ty=double
           ]
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1229,35): warning C4305: '-=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1231,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1253,35): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1255,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
           with
           [
               _Ty=double
           ]
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1239,35): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1241,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1263,35): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1265,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
           with
           [
               _Ty=double
           ]
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1248,35): warning C4305: '-=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1250,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1272,35): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1274,30): warning C4244: '=': conversion from 'const _Ty' to 'float', possible loss of data
           with
           [
               _Ty=double
           ]
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1258,63): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1258,57): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1258,41): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1258,35): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1258,28): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1274,21): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1274,31): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1274,41): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1277,21): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1282,21): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1282,31): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1282,41): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1283,66): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1283,45): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1283,35): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1285,21): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1290,21): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1290,31): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1290,41): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1291,64): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1291,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1293,21): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1315,59): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1315,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1315,28): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1318,57): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1318,52): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1318,47): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1318,28): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1318,24): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1323,42): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1323,35): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1323,28): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1329,65): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1329,60): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1329,55): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1329,36): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1329,29): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1332,28): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1338,57): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1338,39): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1338,33): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1338,27): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1346,40): warning C4305: '-=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1347,43): warning C4305: '-=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1354,42): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1355,43): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1364,116): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1364,111): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1364,106): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1364,68): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1364,38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1372,69): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1372,64): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1372,59): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1372,35): warning C4305: 'argument': truncation from 'double' to 'float'
-C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1075,81): warning C4101: 'scaleMatrix': unreferenced local variable
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1282,63): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1282,57): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1282,41): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1282,35): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1282,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1298,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1298,31): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1298,41): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1301,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1306,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1306,31): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1306,41): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1307,66): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1307,45): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1307,35): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1309,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1314,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1314,31): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1314,41): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1315,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1315,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1317,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1339,59): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1339,44): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1339,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1342,57): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1342,52): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1342,47): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1342,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1342,24): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1347,42): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1347,35): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1347,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1353,65): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1353,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1353,55): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1353,36): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1353,29): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1356,28): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1362,57): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1362,39): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1362,33): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1362,27): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1370,40): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1371,43): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1378,42): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1379,43): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1388,116): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1388,111): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1388,106): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1388,68): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1388,38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1396,69): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1396,64): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1396,59): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1396,35): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\main.cpp(1099,81): warning C4101: 'scaleMatrix': unreferenced local variable
   Lighting.vcxproj -> C:\Users\Mahadi Ankon\Desktop\Computer-Graphics-Project\x64\Debug\Lighting.exe

@@ -911,16 +911,40 @@ void table2 (Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::m
     a = transform2(-0.3, -0.73 + 1.125, -2.5, 90, 0, 0, 2, 1, .1);
     cube.drawCubeWithTexture(lightingShader, model * a);
 
-    a = transform2(0.7, -0.73 + .65, -2.5, 90, 0, 0, 5, 1, .1);
+    a = transform2(0.7, -0.73 + .65 + 0.3, -2.5, 90, 0, 0, 5, 1, .1);
     cube.drawCubeWithTexture(lightingShader, model * a);
 
-    a = transform2(0.7, -0.75+.45, -2.5, 0, 0, 0, 5.0, 1.8, .1);
+    a = transform2(0.7, -0.75+.45+ 0.3, -2.5, 0, 0, 0, 5.0, 0.14+0.225, .1);
     cube.drawCubeWithTexture(lightingShader, model * a);
 
-    a = transform2(-0.7+3.85, -0.8, -2, 0, 90, 0, 1, 1.4, .1);
+
+    a = transform2(-0.7+3.85, -0.8 + 0.5-0.5, -2, 0, 90, 0, 1, 2.1, .1);
     cube.drawCubeWithTexture(lightingShader, model * a);
 
-    a = transform2(0.7, -0.73 + .45, -2.5, 90, 0, 0, 5, 1, .1);
+    a = transform2(0.7, -0.73 + .45 + 0.3, -2.5, 90, 0, 0, 5, 1, .1);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+    //mirror
+    a = transform2(0.7, -0.75 + .65 + 0.3, -2.5, 0, 0, 0, 5.0, 2.3, 0.11);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+    cube.setTextureProperty(wood_tex, wood_tex, 32.0f);
+    a = transform2(0.8, -0.75 + .65 + 0.3, -2.42, 0, 0, 0, 4.6, 2.3, 0.01);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+    
+    //mirrorframe
+    cube.setTextureProperty(shelf_tex, shelf_tex2, 32.0f);
+    a = transform2(0.7, -0.75 + .65 + 0.3, -2.5, 0, 0, 0, 0.2, 2.3, 0.2);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(0.7+2.4, -0.75 + .65 + 0.3, -2.5 , 0, 0, 0, 0.2, 2.3, 0.2);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(0.7, -0.75 + .65+1.15 + 0.3, -2.5, 0, 0, 0, 5, 0.2, 0.2);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    //drawers
+    a = transform2(0.7, -0.75 + .45 + 0.3, -2.5+shamne1, 0, 0, 0, 5.0, 0.14 + 0.225, 1);
     cube.drawCubeWithTexture(lightingShader, model * a);
 
     a = transform2(-0.25, -0.73 + 0.33, -2.499 + shamne1, 90, 0, 0, 1.9, 1, 0.7);
@@ -1171,7 +1195,7 @@ int main()
 
 
         //waredrove
-        model = transform(-5.1, 0, -2, 0, 90, 0, 1, 1, 1);
+        model = transform(-6.5, 0, -0.7, 0, 180, 0, 1, 1, 1);
         waredrove(cube, lightingShaderWithTexture, lightingShader, model,brick_wood);
         if(box)
         {
