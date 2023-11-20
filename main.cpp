@@ -20,7 +20,7 @@
 #include "spotLight.h"
 #include "cube.h"
 #include "stb_image.h"
-
+#include "curve.h"
 #include <iostream>
 
 using namespace std;
@@ -82,6 +82,8 @@ unsigned int table_tex;
 unsigned int mirror_tex;
 unsigned int rug_tex;
 unsigned int brick_wood;
+unsigned int fridge_door1;
+unsigned int fridge_door2;
 int anim = 0;
 const int MAX_ANIM_VALUE = 74;
 bool box=false;
@@ -98,6 +100,21 @@ float swing_angle = 0.0;
 bool is_increasing = true;
 float swing_translate = 0.0;
 float swing_translatez = 0.0;
+float fridge_door_open = 0.0;
+float fridge_door_open2 = 0.0;
+
+
+vector<float>wheel_vertices = {
+    -0.7300, 2.3200, 5.1000,
+    -0.7400, 2.1250, 5.1000,
+    -0.7350, 1.9250, 5.1000,
+    -0.7250, 1.6700, 5.1000,
+    -0.7250, 1.4700, 5.1000,
+    -0.7250, 1.2600, 5.1000,
+    -0.7200, 1.0350, 5.1000
+};
+
+
 
 //Camera
 Camera camera(glm::vec3(0.0f, 0.0f, 1.5f));
@@ -195,6 +212,20 @@ glm::mat4 transform(float tr_x, float tr_y, float tr_z, int rot_x, int rot_y, in
     scaleMatrix = glm::scale(identityMatrix, glm::vec3(scale_X * scal_x, scale_Y * scal_y, scale_Z * scal_z));
     model = translateMatrix * rotateXMatrix * rotateYMatrix * rotateZMatrix * scaleMatrix;
     return model;
+}
+
+
+glm::mat4 transform2(float tx, float ty, float tz, float rx, float ry, float rz, float sx, float sy, float sz)
+{
+    glm::mat4 identityMatrix = glm::mat4(1.0f);
+    glm::mat4 translateMatrix, rotateXMatrix, rotateYMatrix, rotateZMatrix, scaleMatrix, a;
+    translateMatrix = glm::translate(identityMatrix, glm::vec3(tx, ty, tz));
+    rotateXMatrix = glm::rotate(identityMatrix, glm::radians(rx), glm::vec3(1.0f, 0.0f, 0.0f));
+    rotateYMatrix = glm::rotate(identityMatrix, glm::radians(ry), glm::vec3(0.0f, 1.0f, 0.0f));
+    rotateZMatrix = glm::rotate(identityMatrix, glm::radians(rz), glm::vec3(0.0f, 0.0f, 1.0f));
+    scaleMatrix = glm::scale(identityMatrix, glm::vec3(sx, sy, sz));
+    a = translateMatrix * rotateXMatrix * rotateYMatrix * rotateZMatrix * scaleMatrix;
+    return a;
 }
 
 void Sofa(Cube& cube, Shader& lightingShader, Shader& lightingShader2,  glm::mat4 model)
@@ -644,7 +675,7 @@ void ladder(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::ma
 }
 
 
-void dressingtable(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
+void studytable(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
 {
     cube.setTextureProperty(table_tex, table_tex, 32.0f);
     glm::mat4 a = transform(-2.0, -.8, -4, 0, 0, 0, 3.5, 2.75, 0.1);
@@ -662,14 +693,71 @@ void dressingtable(Cube& cube, Shader& lightingShader, Shader& lightingShader2, 
     a = transform(-1.15, -.5, -4, 0, 0, 0, 1.7, 0.1, 1.2);
     cube.drawCubeWithTexture(lightingShader, model * a);
 
-    a = transform(-2.0, -.8, -3.4, 0, 0, 0, 1.7, 1.25, 0.1);
-    //  drawCube(cubeVAO, lightingShader, model * a, 1, 0, 0);
-
     a = transform(-2, -.2, -4, 0, 0, 0, 3.5, 0.1, 1.2);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    //box
+    cube.setTextureProperty(sofa_tex2, sofa_tex1, 32.0f);
+    a = transform(-1.15+0.05, -.45, -4+shamne1, 0, 0, 0, 1.6, 0.5, 1.2);
     cube.drawCubeWithTexture(lightingShader, model * a);
 
 }
 
+void chair(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
+{
+    cube.setTextureProperty(table_tex, table_tex, 32.0f);
+    glm::mat4 a = transform2(-6, -2.6, -2.3, 0, 0, 0, 1, 0.1, 1.2);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+    a = transform2(-5.525, -2.55, -2.3, 0, 0, 90, 1, 0.1, 1.2);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+    a = transform2(-5.525, -2.6, -2.3, 0, 0, 0, 0.05, 0.8, 0.05);
+    cube.setMaterialisticProperty(glm::vec3(0, 0, 0));
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+    a = transform2(-5.525, -2.6, -2.3+0.575, 0, 0, 0, 0.05, 0.8, 0.05);
+    cube.setMaterialisticProperty(glm::vec3(0, 0, 0));
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+    a = transform2(-6, -2.6, -2.3, 90, 0, 0, 0.05, 1.2, 0.05);
+    cube.setMaterialisticProperty(glm::vec3(0, 0, 0));
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+    a = transform2(-5.525, -2.6, -2.3, 90, 0, 0, 0.05, 1.2, 0.05);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+    a = transform2(-5.525, -2.2, -2.3, 90, 0, 0, 0.05, 1.2, 0.05);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+
+    a = transform2(-5.525, -2.625, -2.3, 0, 0, 90, 0.05, 0.9, 0.05);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+
+    a = transform2(-5.525, -2.625, -1.725, 0, 0, 90, 0.05, 0.9, 0.05);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+
+    a = transform2(-6, -3.07, -2.3, 0, 0, 0, 0.05, 0.9, 0.05);
+    cube.setMaterialisticProperty(glm::vec3(1, 0, 0));
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+
+    a = transform2(-6, -3.07, -1.725, 0, 0, 0, 0.05, 0.9, 0.05);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+    a = transform2(-5.525, -3.07, -2.3, 0, 0, 00, 0.05, 0.9, 0.05);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+
+    a = transform2(-5.525, -3.07, -1.725, 0, 0, 0, 0.05, 0.9, 0.05);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+
+
+}
 
 void bed(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
 {
@@ -720,18 +808,7 @@ void doortonextroom(Cube& cube, Shader& lightingShader, Shader& lightingShader2,
 
 }
 
-glm::mat4 transform2(float tx, float ty, float tz, float rx, float ry, float rz, float sx, float sy, float sz)
-{
-    glm::mat4 identityMatrix = glm::mat4(1.0f);
-    glm::mat4 translateMatrix, rotateXMatrix, rotateYMatrix, rotateZMatrix, scaleMatrix, a;
-    translateMatrix = glm::translate(identityMatrix, glm::vec3(tx, ty, tz));
-    rotateXMatrix = glm::rotate(identityMatrix, glm::radians(rx), glm::vec3(1.0f, 0.0f, 0.0f));
-    rotateYMatrix = glm::rotate(identityMatrix, glm::radians(ry), glm::vec3(0.0f, 1.0f, 0.0f));
-    rotateZMatrix = glm::rotate(identityMatrix, glm::radians(rz), glm::vec3(0.0f, 0.0f, 1.0f));
-    scaleMatrix = glm::scale(identityMatrix, glm::vec3(sx, sy, sz));
-    a = translateMatrix  * rotateXMatrix * rotateYMatrix* rotateZMatrix * scaleMatrix;
-    return a;
-}
+
 
 void swing(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
 {
@@ -962,8 +1039,46 @@ void table2 (Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::m
     cube.drawCubeWithTexture(lightingShader, model * a);
 }
 
+void fridge(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
+{
+
+    cube.setMaterialisticProperty(glm::vec3(0.8, 0.792, 0.792));
+    glm::mat4 a = transform2(0, 0, -2.5, 0, 0, 0, 1.8, 3.2, 0.1);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+    a = transform2(0, 0, -2.5, 0, 0, 0, 0.1, 3.2, 1.8);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+    a = transform2(0.9, 0, -2.5, 0, 0, 0, 0.1, 3.2, 1.8);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+    a = transform2(0, 0, -2.5, 0, 0, 0, 1.8, 0.1, 1.8);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+    a = transform2(0, 1.6, -2.5, 0, 0, 0, 1.9, 0.1, 1.8);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+    a = transform2(0, 1.1, -2.5, 0, 0, 0, 1.8, 0.1, 1.8);
+    cube.drawCubeWithMaterialisticProperty(lightingShader2, model * a);
+
+}
+
+void fridgedoor(Cube& cube, Shader& lightingShader, Shader& lightingShader2, glm::mat4 model)
+{
+
+    cube.setMaterialisticProperty(glm::vec3(0.8, 0.792, 0.792));
+    cube.setTextureProperty(fridge_door2, fridge_door2, 32.0f);
+    glm::mat4 a = transform2(0, 0, -1.6, 0, -fridge_door_open, 0, 1.9, 2.2, 0.11);
+     cube.drawCubeWithTexture(lightingShader, model * a);
 
 
+
+    cube.setTextureProperty(fridge_door1, fridge_door1, 32.0f);
+    a = transform2(0, 1.15, -1.6, 0, -fridge_door_open2, 0, 1.9, 1, 0.11);
+    cube.drawCubeWithTexture(lightingShader, model * a);
+
+
+}
 
 int main()
 {
@@ -1045,8 +1160,13 @@ int main()
     bed_sofa = loadTexture("bedsofa.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     mirror_tex = loadTexture("mirror.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     rug_tex = loadTexture("rug.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
+    fridge_door1 = loadTexture("fridge_door1.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
+    fridge_door2 = loadTexture("fridge_door2.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     Cube cube = Cube(diffMap, specMap, 32.0f, 0.0f, 0.0f, 1.0f, 1.0f);
     Cube tiles_cube = Cube(floor_tex, floor_tex, 32.0, 0.0f, 0.0f, 20.0f, 20.0f);
+
+    Curve wheel(wheel_vertices, painting_tex, painting_tex, 1.0f);
+
     //Sphere sphere = Sphere();
 
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
@@ -1121,7 +1241,10 @@ int main()
         model = transform(-10.2, 0, 2.8, 0, 180, 0, 1.2, 1, 1.6);
         bed(cube, lightingShaderWithTexture, lightingShader, model);
 
-
+        //fridge
+        model = transform2(-5, -3.25, -4, 0, -90, 0, 1, 1, 1);
+        fridge(cube, lightingShaderWithTexture, lightingShader, model);
+        fridgedoor(cube, lightingShaderWithTexture, lightingShader, model);
 
         //rug
         tiles_cube.setTextureProperty(rug_tex, rug_tex, 32.0);
@@ -1155,10 +1278,13 @@ int main()
         bedSofa(cube, lightingShaderWithTexture, lightingShader, model);
 
 
-        //Mat
+        model = transform(-4, -1, -2, 90, 0, 0, 0.2, 0.2, 0.2);
+        wheel.draw(lightingShaderWithTexture,  model, glm::vec3(1.0f, 1.0f, 1.0f));
+
+        ////Mat
         glm::mat4 a = transform(.7, -.8, -1.2, 0, -90, 0, 3, 0.2, 2);
-        cube.setMaterialisticProperty(glm::vec3(0.89, 0.694, 0.694));
-        cube.drawCubeWithMaterialisticProperty(lightingShader, model* a);
+        //cube.setMaterialisticProperty(glm::vec3(0.89, 0.694, 0.694));
+        //cube.drawCubeWithMaterialisticProperty(lightingShader, model* a);
 
         //table
         model = transform(5.0, -0.2, -0.5, 0, 90, 0, 1.5, 1, 1.3);
@@ -1210,6 +1336,11 @@ int main()
 
                 shamne1 = min(shamne1+0.0 , 0.4);
             }
+            for (int i = 0; i < 10; i++)
+            {
+                fridge_door_open += 0.1;
+                fridge_door_open = min(fridge_door_open+0.0, 120.0);
+            }
         }
         else
         {
@@ -1218,6 +1349,11 @@ int main()
                 shamne1 -= 0.00013;
 
                 shamne1 = max(shamne1 + 0.0, 0.0);
+            }
+            for (int i = 0; i<10; i++)
+            {
+                fridge_door_open -= 0.1;
+                fridge_door_open = max(fridge_door_open + 0.0, 0.0);
             }
         }
 
@@ -1231,6 +1367,11 @@ int main()
 
                 shamne2 = min(shamne2 + 0.0, 0.4);
             }
+            for (int i = 0; i < 10; i++)
+            {
+                fridge_door_open2 += 0.1;
+                fridge_door_open2 = min(fridge_door_open2 + 0.0, 120.0);
+            }
         }
         else
         {
@@ -1239,6 +1380,11 @@ int main()
                 shamne2 -= 0.00013;
 
                 shamne2 = max(shamne2 + 0.0, 0.0);
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                fridge_door_open2 -= 0.1;
+                fridge_door_open2 = max(fridge_door_open2 + 0.0, 0.0);
             }
         }
 
@@ -1333,9 +1479,11 @@ int main()
             dooropenclose(cube, lightingShaderWithTexture, lightingShader, a*model);
             a = transform(6.5, 0, -3.5, 0, 90, 0, 1, 1, 1);
             dooropenclose2(cube, lightingShaderWithTexture, lightingShader, a*model);
+
         }
         else
         {
+
             dooropenclose(cube, lightingShaderWithTexture, lightingShader, model);
             dooropenclose2(cube, lightingShaderWithTexture, lightingShader, model);
         }
@@ -1358,8 +1506,14 @@ int main()
         model = transform2(-4.3 , -0.2, -1, 0, 90, 0, 0.4, 0.7, 1.2);
         table2(cube, lightingShaderWithTexture, lightingShader, model);
 
-        model = transform(-3.15, 0, -3.5, 0, 90, 0, 1, 1, 1);
-       // dressingtable(cube, lightingShaderWithTexture, lightingShader, model);
+
+        //study table
+        model = transform(-3.15, -2.44, -3.5, 0, 90, 0, 1, 1, 1);
+        studytable(cube, lightingShaderWithTexture, lightingShader, model);
+
+        //chair
+        model = transform2(-0.9, -.2, 0.05, 0, 0, 0, 1, 1, 1);
+        chair(cube,lightingShaderWithTexture,lightingShader,model);
 
 
        // //showcase 2
@@ -1416,7 +1570,7 @@ int main()
         glm::mat4 modelMatrixForContainer = glm::mat4(1.0f);
         translateMatrix = glm::translate(identityMatrix, glm::vec3(0, 0.065, 4.86783));
         
-        //Table(cube, lightingShader, translateMatrix);
+       // Table(cube, lightingShader, translateMatrix);
 
 
         
