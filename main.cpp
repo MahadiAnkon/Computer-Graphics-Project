@@ -84,6 +84,7 @@ unsigned int rug_tex;
 unsigned int brick_wood;
 unsigned int fridge_door1;
 unsigned int fridge_door2;
+unsigned int white1;
 int anim = 0;
 const int MAX_ANIM_VALUE = 74;
 bool box=false;
@@ -104,18 +105,190 @@ float fridge_door_open = 0.0;
 float fridge_door_open2 = 0.0;
 
 
-vector<float>wheel_vertices = {
-    -0.7300, 2.3200, 5.1000,
-    -0.7400, 2.1250, 5.1000,
-    -0.7350, 1.9250, 5.1000,
-    -0.7250, 1.6700, 5.1000,
-    -0.7250, 1.4700, 5.1000,
-    -0.7250, 1.2600, 5.1000,
-    -0.7200, 1.0350, 5.1000
+vector<float>Vase = {
+-0.0550, 2.1150, 5.1000,
+-0.1800, 2.1350, 5.1000,
+-0.2500, 2.1250, 5.1000,
+-0.2250, 2.0050, 5.1000,
+-0.2700, 1.8500, 5.1000,
+-0.3800, 1.6600, 5.1000,
+-0.3650, 1.4400, 5.1000,
+-0.2950, 1.2250, 5.1000,
+-0.2600, 0.9750, 5.1000,
+-0.2100, 0.8100, 5.1000,
+-0.1700, 0.6550, 5.1000,
+};
+
+vector<float>Vase2 = {
+0.1050, 0.5700, 5.1000,
+-0.0350, 0.5850, 5.1000,
+-0.1300, 0.5900, 5.1000,
+-0.2500, 0.6850, 5.1000,
+-0.3150, 0.8500, 5.1000,
+-0.3600, 0.9950, 5.1000,
+-0.3750, 1.1400, 5.1000,
+-0.3750, 1.3150, 5.1000,
+-0.3600, 1.4800, 5.1000,
+-0.3550, 1.6450, 5.1000,
+-0.2800, 1.8250, 5.1000,
+-0.2250, 1.9950, 5.1000,
+-0.1950, 2.1800, 5.1000,
+-0.1750, 2.3250, 5.1000,
+-0.1750, 2.4300, 5.1000,
+-0.1600, 2.5350, 5.1000,
 };
 
 
+vector<float>Vase3{
+-0.5900, 1.8500, 5.1000,
+-0.4950, 1.8050, 5.1000,
+-0.3050, 1.7250, 5.1000,
+-0.2050, 1.6150, 5.1000,
+-0.1700, 1.4200, 5.1000,
+-0.1900, 1.2550, 5.1000,
+-0.2450, 1.1050, 5.1000,
+-0.3200, 0.9700, 5.1000,
+-0.4550, 0.8000, 5.1000,
+-0.5400, 0.6350, 5.1000,
+-0.5950, 0.4450, 5.1000,
+-0.6050, 0.2250, 5.1000,
+-0.6000, 0.0500, 5.1000,
+-0.5650, -0.0400, 5.1000,
+-0.5400, -0.1550, 5.1000,
+-0.4200, -0.2050, 5.1000,
+-0.2650, -0.2550, 5.1000,
+-0.1850, -0.2500, 5.1000,
+-0.0300, -0.2550, 5.1000,
+0.0600, -0.2600, 5.1000,
+};
 
+vector<float>Vase4
+{
+    0.0100, 1.8300, 5.1000,
+        -0.1850, 1.8500, 5.1000,
+        -0.3600, 1.8500, 5.1000,
+        -0.5000, 1.7100, 5.1000,
+        -0.5750, 1.5750, 5.1000,
+        -0.6200, 1.4100, 5.1000,
+        -0.5750, 1.2850, 5.1000,
+        -0.4600, 1.1300, 5.1000,
+        -0.3850, 0.9650, 5.1000,
+        -0.3300, 0.8100, 5.1000,
+        -0.2950, 0.6600, 5.1000,
+        -0.3250, 0.5150, 5.1000,
+        -0.3750, 0.4300, 5.1000,
+        -0.4200, 0.3400, 5.1000,
+};
+
+vector<float>Vase5
+{
+-0.2850, 1.8000, 5.1000,
+-0.2850, 1.7500, 5.1000,
+-0.2700, 1.7250, 5.1000,
+-0.2500, 1.6450, 5.1000,
+-0.2500, 1.6300, 5.1000,
+-0.2400, 1.5850, 5.1000,
+-0.2450, 1.5450, 5.1000,
+-0.2700, 1.5050, 5.1000,
+-0.3000, 1.4700, 5.1000,
+-0.3300, 1.3950, 5.1000,
+-0.3900, 1.3100, 5.1000,
+-0.4050, 1.2350, 5.1000,
+-0.4200, 1.1550, 5.1000,
+-0.4300, 1.0150, 5.1000,
+-0.4300, 0.8950, 5.1000,
+-0.4100, 0.7500, 5.1000,
+-0.3450, 0.6800, 5.1000,
+-0.2950, 0.6150, 5.1000,
+-0.2750, 0.5150, 5.1000,
+-0.2600, 0.4450, 5.1000,
+-0.2800, 0.3000, 5.1000,
+-0.2500, 0.1850, 5.1000,
+-0.2350, 0.0750, 5.1000,
+-0.1600, 0.0300, 5.1000,
+-0.0200, 0.0200, 5.1000,
+};
+
+vector<float>Bowl
+{
+-0.7850, 1.4250, 5.1000,
+-0.7350, 1.0950, 5.1000,
+-0.6200, 0.8350, 5.1000,
+-0.5100, 0.6250, 5.1000,
+-0.3950, 0.5400, 5.1000,
+-0.1900, 0.4900, 5.1000,
+-0.0200, 0.4600, 5.1000,
+0.0900, 0.4650, 5.1000,
+0.2450, 0.4800, 5.1000,
+};
+
+
+vector<float>Circle
+{
+0.0750, 1.8400, 5.1000,
+-1.1200, 1.8450, 5.1000,
+};
+
+vector<float>glassp{
+    0.0900, 1.8350, 5.1000,
+0.0050, 1.8350, 5.1000,
+-0.0850, 1.8400, 5.1000,
+-0.1650, 1.8300, 5.1000,
+-0.2950, 1.8300, 5.1000,
+-0.3700, 1.8300, 5.1000,
+-0.5400, 1.8350, 5.1000,
+-0.4750, 1.7750, 5.1000,
+-0.4100, 1.7350, 5.1000,
+-0.3550, 1.6950, 5.1000,
+-0.3300, 1.6100, 5.1000,
+-0.3150, 1.5150, 5.1000,
+-0.3200, 1.4400, 5.1000,
+-0.3250, 1.3450, 5.1000,
+-0.3900, 1.2200, 5.1000,
+-0.4400, 1.0550, 5.1000,
+-0.5300, 0.9800, 5.1000,
+-0.5800, 0.8300, 5.1000,
+-0.5750, 0.7000, 5.1000,
+-0.6000, 0.6200, 5.1000,
+-0.6000, 0.5500, 5.1000,
+-0.5950, 0.4350, 5.1000,
+-0.5650, 0.3050, 5.1000,
+-0.5450, 0.2300, 5.1000,
+-0.5300, 0.0300, 5.1000,
+-0.5350, 0.1200, 5.1000,
+};
+
+vector<float> Table = {
+                 0, 1.65, 5.1000,
+                 0, 1.72, 5.1000,
+                 -0.005, 1.72, 5.1000,
+                -0.1600, 1.72, 5.1000,
+                -0.2300, 1.72, 5.1000,
+                -0.2950, 1.7200, 5.1000,
+                -0.3700, 1.7200, 5.1000,
+                -0.4500, 1.7200, 5.1000,
+                -0.5400, 1.7200, 5.1000,
+                -0.6100, 1.7200, 5.1000,
+                -0.6900, 1.7200, 5.1000,
+                -0.6900, 1.6600, 5.1000,
+                -0.6900, 1.6150, 5.1000,
+                -0.6900, 1.5600, 5.1000,
+                -0.6600, 1.56, 5.1000,
+                -0.5950, 1.56, 5.1000,
+                -0.5450, 1.56, 5.1000,
+                -0.4850, 1.56, 5.1000,
+                -0.4200, 1.56, 5.1000,
+                -0.3600, 1.56, 5.1000,
+                -0.2800, 1.56, 5.1000,
+                -0.1900, 1.56, 5.1000,
+                -0.1250, 1.56, 5.1000,
+                -0.0650, 1.56, 5.1000,
+                 0, 1.56, 5.1000,
+};
+vector<float> Tableleg = {
+-0.0750, 1.9300, 5.1000,
+-0.0150, 0.0250, 5.1000,
+};
 //Camera
 Camera camera(glm::vec3(0.0f, 0.0f, 1.5f));
 float lastX = SCR_WIDTH / 2.0f;
@@ -1162,11 +1335,24 @@ int main()
     rug_tex = loadTexture("rug.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     fridge_door1 = loadTexture("fridge_door1.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     fridge_door2 = loadTexture("fridge_door2.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
+    white1 = loadTexture("whiteBackground.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
+
+    unsigned int glass = loadTexture("glass.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
+    unsigned int water = loadTexture("water.png", GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     Cube cube = Cube(diffMap, specMap, 32.0f, 0.0f, 0.0f, 1.0f, 1.0f);
     Cube tiles_cube = Cube(floor_tex, floor_tex, 32.0, 0.0f, 0.0f, 20.0f, 20.0f);
 
-    Curve wheel(wheel_vertices, painting_tex, painting_tex, 1.0f);
+    Curve Vase1(Vase, painting_tex, painting_tex, 1.0f);
 
+    Curve Vase22(Vase2, white1, white1, 1.0f);
+    Curve Vase33(Vase3, painting_tex, painting_tex, 1.0f);
+    Curve Vase44(Vase4, white1, white1, 1.0f);
+    Curve Vase55(Vase5, white1, white1, 1.0f);
+    Curve bowl(Bowl, white1,white1, 1.0f);
+    Curve Glass(glassp, glass, glass, 1.0f);
+    Curve circle(Circle, water, water, 1.0f);
+    Curve tableleg(Tableleg, water, water, 1.0f);
+    Curve Table1(Table, painting_tex, painting_tex, 1.0f);
     //Sphere sphere = Sphere();
 
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
@@ -1277,22 +1463,72 @@ int main()
         model = transform(-8.5, -0.1, -2, 0, -90, 0, 0.8, 1, 1);
         bedSofa(cube, lightingShaderWithTexture, lightingShader, model);
 
+        // Vase //////////////////////////////////////////////////////////////////////
+        //model = transform(-4 - 0.2, -0.3, -2, 0, 0, 0, 0.2, 0.2, 0.2);
+        //Vase1.draw(lightingShaderWithTexture,  model, glm::vec3(1.0f, 1.0f, 1.0f));
 
-        model = transform(-4, -1, -2, 90, 0, 0, 0.2, 0.2, 0.2);
-        wheel.draw(lightingShaderWithTexture,  model, glm::vec3(1.0f, 1.0f, 1.0f));
+        //model = transform(-4 - 0.2 - 0.2, -0.3, -2, 0, 0, 0, 0.2, 0.2, 0.2);
+        //Vase22.draw(lightingShaderWithTexture, model, glm::vec3(1.0f, 1.0f, 1.0f));
+
+        //model = transform(-4, -0.25, -0.6, 0, 0, 0, 0.2, 0.2, 0.2);
+        //Vase33.draw(lightingShaderWithTexture, model, glm::vec3(1.0f, 1.0f, 1.0f));
+
+
+        //model = transform2(-4 - 0.2 - 0.2 - 0.2 - 0.2, -0.3, -2, 180, 0, 0, 0.2, 0.2, 0.2);
+        //Vase44.draw(lightingShaderWithTexture, model, glm::vec3(1.0f, 1.0f, 1.0f));
+
+        //model = transform(-4 - 0.2 - 0.2 - 0.2 - 0.2 - 0.2, -0.3, -2, 0, 0, 0, 0.2, 0.2, 0.2);
+        //Vase55.draw(lightingShaderWithTexture, model, glm::vec3(1.0f, 1.0f, 1.0f));
+
+
+
+        //////////////////////////////////glass///////////////////////////////////////////
+        model = transform(-5.2, -0.22, -2, 0, 0, 0, 0.05, 0.13, 0.05);
+        circle.draw(lightingShaderWithTexture, model, glm::vec3(1.0f, 1.0f, 1.0f));
+
+
+
+
+        model = transform(-5.2, -0.22 +0.28, -2, 180, 0, 0, 0.1, 0.13, 0.1);
+        Glass.draw(lightingShaderWithTexture, model, glm::vec3(1.0f, 1.0f, 1.0f));
+
+
+
+
+
+        ////////////////////////////////table///////////////////////////////
+
+        model = transform(-5.2, -1.2, -2, 0, 0, 0, 1, 0.6, 1);
+        Table1.draw(lightingShaderWithTexture, model, glm::vec3(1.0f, 1.0f, 1.0f));
+       
+        
+        model = transform(-5.2, -0.7, -1.6, -30, 0, 0, 0.4, 0.3, 0.4);
+        tableleg.draw(lightingShaderWithTexture, model, glm::vec3(1.0f, 1.0f, 1.0f));
+
+        model = transform(-5.2, -0.7, -2.4, 30, 0, 0, 0.4, 0.3, 0.4);
+        tableleg.draw(lightingShaderWithTexture, model, glm::vec3(1.0f, 1.0f, 1.0f));
+
+
+        model = transform(-5.6, -0.7, -2, 0, 0, -30, 0.4, 0.3, 0.4);
+        tableleg.draw(lightingShaderWithTexture, model, glm::vec3(1.0f, 1.0f, 1.0f));
+
+        model = transform(-4.8, -0.7, -2, 0, 0, 30, 0.4, 0.3, 0.4);
+        tableleg.draw(lightingShaderWithTexture, model, glm::vec3(1.0f, 1.0f, 1.0f));
+
+
 
         ////Mat
         glm::mat4 a = transform(.7, -.8, -1.2, 0, -90, 0, 3, 0.2, 2);
-        //cube.setMaterialisticProperty(glm::vec3(0.89, 0.694, 0.694));
+        //cube.setMaterialisticProperty(glm::vec3(0.89, 0.694, 0.694)); 
         //cube.drawCubeWithMaterialisticProperty(lightingShader, model* a);
 
         //table
         model = transform(5.0, -0.2, -0.5, 0, 90, 0, 1.5, 1, 1.3);
         table(cube, lightingShaderWithTexture, lightingShader, model);
-       // 
-       // //anim = (anim == MAX_ANIM_VALUE) ? 0 : ++anim;
-       // string s = "aquarium/giphy-" + to_string(anim) + ".png";
-       // aquarium = loadTexture(s.c_str(), GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
+        
+        //anim = (anim == MAX_ANIM_VALUE) ? 0 : ++anim;
+        //string s = "aquarium/giphy-" + to_string(anim) + ".png";
+        //aquarium = loadTexture(s.c_str(), GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
 
 
 
@@ -1300,9 +1536,13 @@ int main()
 
         //tv
         //cout << s << endl;
+       // cube.setTextureProperty(aquarium, aquarium, 32);
         a = transform(-2.45, -.4, 1.0, 0, 90, 0, 4.5, 2.2, 0.1);
         cube.setMaterialisticProperty(glm::vec3(0, 0, 0));
         cube.drawCubeWithMaterialisticProperty(lightingShader, a);
+       // cube.drawCubeWithTexture(lightingShaderWithTexture, a);
+
+
 
         //painting
         cube.setTextureProperty(painting_tex3, painting_tex3, 32.0);
@@ -1919,7 +2159,7 @@ void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
     camera.ProcessMouseMovement(xoffset, yoffset);
 }
 
-// glfw: whenever the mouse scroll wheel scrolls, this callback is called
+// glfw: whenever the mouse scroll Vase1 scrolls, this callback is called
 // ----------------------------------------------------------------------
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {
